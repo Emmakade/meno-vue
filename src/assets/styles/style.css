@@ -1,0 +1,202 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
+}
+.navbar-brand img {
+    height: 40px;
+}
+.search-bar {
+    max-width: 600px;
+}
+.category-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.category-btn {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 15px;
+    margin: 0;
+    min-width: auto;
+    width: auto;
+}
+
+#more-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#toggle-button {
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    .category-container .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+.item-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.upload-box {
+    cursor: pointer;
+}
+
+#typewriter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50px;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+}
+
+@media (max-width: 767px) {
+    #typewriter {
+        font-size: 2rem;
+        white-space: normal;
+    }
+}
+
+#filter-dropdown {
+    transition: background-color 0.3s ease, color 0.3s ease, width 0.3s ease;
+}
+
+#filter-category {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #5e5e5e;
+}
+
+#filter-category option:hover {
+    background-color: #ddd;
+}
+
+/* Dark mode styles for the search input */
+body.dark-mode #search-input {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+}
+
+body.dark-mode #filter-category {
+    background-color: #333; /* Dark background for select */
+    border: 1px solid #5e5e5e;
+    color: #fff; /* White text */
+}
+
+
+/* dark mode toggle */
+.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .dropdown-item {
+    color: white;
+}
+
+.dark-mode .dropdown-item:hover {
+    background-color: #333;
+}
+
+.dark-mode .text-dark {
+    color: white !important;
+}
+
+.dark-mode .navbar {
+    background-color: #222 !important;
+}
+
+.dark-mode .navbar, 
+.dark-mode .navbar-light {
+    background-color: #000000 !important;
+    border-bottom: 1px solid #333;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e !important;
+    color: white !important;
+}
+
+.dark-mode .card-text{
+    color: white !important;
+}
+
+.dark-mode .card-body .txt{
+    color: #3A8854 !important;
+}
+
+.darkmode .navbar-toggler-icon{
+    color: white !important;
+}
+
+.darkmode input{
+    background-color: #222 !important;
+}
+
+.darkmode ::placeholder{
+    background-color: #222 !important;
+}
+
+.dark-mode .modal-content{
+    background-color: #1e1e1e
+}
+
+.dark-mode .modal-content form input{
+    background-color: #333;
+    border: none;
+    color: white;
+}
+
+.dark-mode .modal-content form input::placeholder{
+    color: #fff;
+}
+
+.dark-mode .container .input-group input{
+    background-color: #333;
+    border: none;
+    color: white;
+}
+
+.dark-mode .container .input-group input::placeholder{
+    color: #fff;
+}
